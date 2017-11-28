@@ -10,6 +10,7 @@ public class CommandSet {
     public CommandSet() {
         commands = new HashMap<>();
         addCommand(new RegisterCommand("/reg"));
+        addCommand(new GuessNumberCommand("/guess"));
 
     }
 

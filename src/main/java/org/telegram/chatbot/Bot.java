@@ -9,6 +9,8 @@ import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 
+import java.util.Optional;
+
 public class Bot extends TelegramLongPollingBot {
 
     private static Logger logger = Logger.getLogger(Bot.class);
@@ -38,14 +40,17 @@ public class Bot extends TelegramLongPollingBot {
     private void processMessage(Update update) {
         String text = update.getMessage().getText();
         logger.info("MESSAGE: Text: " + text);
-//        SendMessage message = new SendMessage() // Create a SendMessage object with mandatory fields
-//                .setChatId(update.getMessage().getChatId())
-//                .setText("slishkom mnogo pizdush, vvodi /reg");
-//        try {
-//            execute(message);
-//        } catch (TelegramApiException e) {
-//            e.printStackTrace();
-//        }
+
+        Integer senderId = update.getMessage().getFrom().getId();
+        if(StringUtils.isNumber(text) && game.isPlayer(senderId) && game.getGameIsStarted()){
+            try {
+                commandSet.getCommand("/guess").execute(this,update);
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
+        }
+
+
     }
 
     private void processCommand(Update update) {

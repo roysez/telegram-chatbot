@@ -22,7 +22,6 @@ public class RegisterCommand extends BotCommand {
 
         Optional<SendMessage> message = Optional.empty();
         Optional<SendMessage> groupMessage = Optional.empty();
-
         try {
             game.regPlayer(update.getMessage().getFrom());
 
@@ -56,6 +55,26 @@ public class RegisterCommand extends BotCommand {
         if (groupMessage.isPresent()) {
             bot.execute(groupMessage.get());
         }
+
+        if(game.startGame()){
+            game.getPlayers().forEach(player -> {
+                try {
+                    bot.execute(new SendMessage()
+                            .setChatId(String.valueOf(player.getId()))
+                            .setText("Твое рандомное число: " + player.getValue()));
+
+
+                } catch (TelegramApiException e) {
+                    e.printStackTrace();
+                }
+            });
+            bot.execute(new SendMessage()
+                    .setChatId(update.getMessage().getChatId())
+                    .setText("Игра началась, все игроки получили свои числа :\n " +
+                    "@" + game.getFirstPlayer().getUsername() + " VS " +
+                     "@" +game.getSecondPlayer().getUsername()));
+        }
+
 
     }
 }
