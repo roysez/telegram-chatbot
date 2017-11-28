@@ -21,6 +21,8 @@ public class Game {
     private Player firstPlayer;
     private Player secondPlayer;
     private Boolean gameIsStarted = false;
+    private Round currentRound;
+    private List<Round> rounds;
 
     private Game() {
 
@@ -57,6 +59,7 @@ public class Game {
             secondPlayer.setValue(generateRandomNumber());
             logger.info("Second player value: " + secondPlayer.getValue());
             gameIsStarted = true;
+            currentRound = new Round();
             return true;
         } else return false;
     }
