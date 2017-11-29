@@ -2,6 +2,9 @@ package org.telegram.chatbot.game;
 
 
 import lombok.Getter;
+import org.telegram.chatbot.utils.StringUtils;
+
+import javax.print.DocFlavor;
 
 @Getter
 public class Score {
@@ -14,7 +17,7 @@ public class Score {
         this.value = value;
         this.digitsGuessed = digitsGuessed;
         this.placesGuessed = placesGuessed;
-        guessed = digitsGuessed == 3 && digitsGuessed == placesGuessed;
+        guessed = digitsGuessed == StringUtils.DIGITS_COUNT && digitsGuessed == placesGuessed;
     }
 
     public boolean isValid() {
