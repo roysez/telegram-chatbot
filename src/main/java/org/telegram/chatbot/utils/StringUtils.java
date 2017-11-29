@@ -1,6 +1,9 @@
 package org.telegram.chatbot.utils;
 
 public class StringUtils {
+
+    public static int DIGITS_COUNT = 3;
+
     public static boolean isCommand(String string) {
         return string.startsWith("/");
     }
@@ -10,8 +13,17 @@ public class StringUtils {
     }
 
     public static boolean isValidNumberForGame(String number) {
-        return isNumber(number) && number.matches("^(?!.*(.).*\\1)\\d{3}$") && number.charAt(0)!='0';
+        return isNumber(number) && number.matches("^(?!.*(.).*\\1)\\d{"+DIGITS_COUNT +"}$") && number.charAt(0)!='0';
     }
+
+    public static int switchMode(){
+        if(DIGITS_COUNT==3)
+            DIGITS_COUNT+=1;
+        else
+            DIGITS_COUNT-=1;
+        return DIGITS_COUNT;
+    }
+
 
     public static int digitsMatches(String first, String second) {
         int count = 0;

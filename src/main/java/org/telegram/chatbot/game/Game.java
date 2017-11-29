@@ -77,7 +77,11 @@ public class Game {
     public int generateRandomNumber() {
         int value;
         do {
-            value = new Random().nextInt(1000 - 101) + 101;
+            if(StringUtils.DIGITS_COUNT==3) {
+                value = new Random().nextInt(1000 - 101) + 101;
+            } else {
+                value = new Random().nextInt(10000 - 1001) + 1001;
+            }
         } while (!StringUtils.isValidNumberForGame(String.valueOf(value)));
         return value;
     }

@@ -11,7 +11,7 @@ public class CommandSet {
         commands = new HashMap<>();
         addCommand(new RegisterCommand("/reg"));
         addCommand(new GuessNumberCommand("/guess"));
-
+        addCommand(new SwitchModeCommand("/switchMode"));
     }
 
     public BotCommand getCommand(String key) {
