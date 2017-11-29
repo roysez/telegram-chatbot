@@ -10,4 +10,12 @@ public class Round {
     public boolean isFinished() {
         return fPlayerScore != null && sPlayerScore != null;
     }
+
+    public boolean firstPlayerHasChance() {
+        return fPlayerScore == null;
+    }
+
+    public boolean secondPlayerHasChance() {
+        return sPlayerScore == null;
+    }
 }

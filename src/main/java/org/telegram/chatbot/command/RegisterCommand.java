@@ -27,7 +27,7 @@ public class RegisterCommand extends BotCommand {
 
             message =  Optional.ofNullable(new SendMessage()
                     .setChatId(String.valueOf(update.getMessage().getFrom().getId()))
-                    .setText("Successfully registered"));
+                    .setText("Ты в игре.. жди свое число"));
 
             groupMessage =  Optional.ofNullable(new SendMessage()
                     .setChatId(update.getMessage().getChatId())

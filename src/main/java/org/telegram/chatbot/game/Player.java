@@ -20,11 +20,11 @@ public class Player {
         username = user.getUserName();
     }
 
-    public Score guessNumber(Player player) {
-        int digitsMatches = StringUtils.digitsMatches(String.valueOf(value),
+    public Score guessNumber(String value,Player player) {
+        int digitsMatches = StringUtils.digitsMatches(value,
                 String.valueOf(player.getValue()));
-        int placesMatches = StringUtils.placesMatches(String.valueOf(value),
+        int placesMatches = StringUtils.placesMatches(value,
                 String.valueOf(player.getValue()));
-        return new Score(digitsMatches, placesMatches);
+        return new Score(Integer.valueOf(value),digitsMatches, placesMatches);
     }
 }

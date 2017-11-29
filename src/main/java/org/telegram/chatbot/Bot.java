@@ -4,12 +4,9 @@ import org.apache.log4j.Logger;
 import org.telegram.chatbot.command.CommandSet;
 import org.telegram.chatbot.game.Game;
 import org.telegram.chatbot.utils.StringUtils;
-import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
-
-import java.util.Optional;
 
 public class Bot extends TelegramLongPollingBot {
 
@@ -42,9 +39,10 @@ public class Bot extends TelegramLongPollingBot {
         logger.info("MESSAGE: Text: " + text);
 
         Integer senderId = update.getMessage().getFrom().getId();
-        if(StringUtils.isNumber(text) && game.isPlayer(senderId) && game.getGameIsStarted()){
+        if (StringUtils.isValidNumberForGame(text) && game.getGameIsStarted() && game.isPlayer(senderId)) {
             try {
-                commandSet.getCommand("/guess").execute(this,update);
+
+                commandSet.getCommand("/guess").execute(this, update);
             } catch (TelegramApiException e) {
                 e.printStackTrace();
             }

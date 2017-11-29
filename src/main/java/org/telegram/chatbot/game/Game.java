@@ -7,6 +7,7 @@ import org.telegram.chatbot.exception.PlayerAlreadyRegisteredException;
 import org.telegram.chatbot.utils.StringUtils;
 import org.telegram.telegrambots.api.objects.User;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -22,7 +23,7 @@ public class Game {
     private Player secondPlayer;
     private Boolean gameIsStarted = false;
     private Round currentRound;
-    private List<Round> rounds;
+    private List<Round> rounds = new ArrayList<>();
 
     private Game() {
 
@@ -30,6 +31,14 @@ public class Game {
 
     public static Game getInstance() {
         return instance == null ? new Game() : instance;
+    }
+
+    public void finishGame() {
+        firstPlayer = null;
+        secondPlayer = null;
+        gameIsStarted = false;
+        currentRound = null;
+        rounds = new ArrayList<>();
     }
 
     public List<Player> getPlayers() {
@@ -65,7 +74,7 @@ public class Game {
     }
 
 
-    public int generateRandomNumber() {
+    private int generateRandomNumber() {
         int value;
         do {
             value = new Random().nextInt(1000 - 101) + 101;
@@ -80,5 +89,33 @@ public class Game {
 
     private boolean isFreeSpace() {
         return firstPlayer == null || secondPlayer == null;
+    }
+
+
+    public boolean nextRound() {
+        if (currentRound.isFinished()) {
+            rounds.add(currentRound);
+            currentRound = new Round();
+            return true;
+        } else
+            return false;
+    }
+
+    public String getRoundsTable() {
+        StringBuilder response = new StringBuilder();
+        response.append("Все раунды: \n");
+        for (Round round : rounds) {
+            Score fPlayerScore = round.getFPlayerScore();
+            Score sPlayerScore = round.getSPlayerScore();
+            response.append(fPlayerScore.getValue())
+                    .append(" | ")
+                    .append(fPlayerScore.toString())
+                    .append(" | ")
+                    .append(sPlayerScore.toString())
+                    .append(" | ")
+                    .append(sPlayerScore.getValue())
+                    .append("\n");
+        }
+        return response.toString();
     }
 }
