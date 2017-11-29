@@ -3,10 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.telegram</groupId>
     <artifactId>chatbot</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.testSourceEncoding>UTF-8</project.build.testSourceEncoding>
+    </properties>
     <build>
         <plugins>
             <plugin>
@@ -16,6 +19,28 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>appassembler-maven-plugin</artifactId>
+                <version>1.1.1</version>
+                <configuration>
+                    <assembleDirectory>target</assembleDirectory>
+                    <programs>
+                        <program>
+                            <mainClass>org.telegram.chatbot.Main</mainClass>
+                            <name>main</name>
+                        </program>
+
+                    </programs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase><goals><goal>assemble</goal></goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

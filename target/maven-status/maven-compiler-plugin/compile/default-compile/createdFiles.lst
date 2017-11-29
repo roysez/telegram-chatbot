@@ -1,0 +1,13 @@
+org\telegram\chatbot\command\RegisterCommand.class
+org\telegram\chatbot\game\Round.class
+org\telegram\chatbot\Main.class
+org\telegram\chatbot\Bot.class
+org\telegram\chatbot\exception\FullRoomException.class
+org\telegram\chatbot\command\BotCommand.class
+org\telegram\chatbot\command\CommandSet.class
+org\telegram\chatbot\game\Player.class
+org\telegram\chatbot\game\Game.class
+org\telegram\chatbot\exception\PlayerAlreadyRegisteredException.class
+org\telegram\chatbot\game\Score.class
+org\telegram\chatbot\command\GuessNumberCommand.class
+org\telegram\chatbot\utils\StringUtils.class

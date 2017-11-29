@@ -9,7 +9,7 @@ public class StringUtilsUT {
     @Test
     public void validatorChecker(){
         assertEquals(true, StringUtils.isValidNumberForGame("123"));
-        assertEquals(false,StringUtils.isValidNumberForGame("112"));
+        assertEquals(false,StringUtils.isValidNumberForGame("012"));
         assertEquals(false,StringUtils.isValidNumberForGame("0112"));
 
     }

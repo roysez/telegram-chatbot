@@ -74,7 +74,7 @@ public class Game {
     }
 
 
-    private int generateRandomNumber() {
+    public int generateRandomNumber() {
         int value;
         do {
             value = new Random().nextInt(1000 - 101) + 101;

@@ -49,12 +49,12 @@ public class GuessNumberCommand extends BotCommand {
             message = Optional.ofNullable(new SendMessage()
                     .setChatId(chatId)
                     .setText("@" + game.getSecondPlayer().getUsername()
-                            + " scored: " + score));
+                            + " scored: " + score ));
             if (score.isGuessed()) {
                 finalMessage = Optional.ofNullable(new SendMessage()
                         .setChatId(chatId)
                         .setText("@" + game.getSecondPlayer().getUsername()
-                                + " угадал число: " + score));
+                                + " угадал число! \n Игра завершена.. " ));
                 game.finishGame();
 
             }
@@ -93,7 +93,7 @@ public class GuessNumberCommand extends BotCommand {
                 finalMessage = Optional.ofNullable(new SendMessage()
                         .setChatId(chatId)
                         .setText("@" + game.getFirstPlayer().getUsername()
-                                + " угадал число: " + score));
+                                + " угадал число! \n Игра завершена.. " ));
                 game.finishGame();
 
             }
