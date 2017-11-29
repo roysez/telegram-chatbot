@@ -2,121 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e82c6a0-f7e5-4c38-b8d4-bac5e7c58959" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/telegram/chatbot/command/SwitchModeCommand.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bin/main" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bin/main.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/chatbot-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/Bot.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/command/BotCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/command/CommandSet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/command/GuessNumberCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/command/RegisterCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/exception/FullRoomException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/exception/PlayerAlreadyRegisteredException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/game/Game.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/game/Player.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/game/Round.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/game/Score.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/telegram/chatbot/utils/StringUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/aopalliance/aopalliance/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/core/jackson-annotations/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/core/jackson-core/2.8.7/jackson-core-2.8.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/core/jackson-core/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/core/jackson-databind/2.8.7/jackson-databind-2.8.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/core/jackson-databind/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.8.7/jackson-jaxrs-base-2.8.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.8.7/jackson-jaxrs-json-provider-2.8.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.8.7/jackson-module-jaxb-annotations-2.8.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/google/guava/guava/19.0/guava-19.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/google/guava/guava/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/google/inject/guice/4.1.0/guice-4.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/com/google/inject/guice/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/commons-codec/commons-codec/1.9/commons-codec-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/commons-codec/commons-codec/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/commons-io/commons-io/2.5/commons-io-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/commons-io/commons-io/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/commons-logging/commons-logging/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/javax/annotation/javax.annotation-api/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/javax/inject/javax.inject/1/javax.inject-1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/javax/inject/javax.inject/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/javax/validation/validation-api/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/javax/ws/rs/javax.ws.rs-api/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/log4j/log4j/1.2.17/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/log4j/log4j/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/apache/httpcomponents/httpclient/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/apache/httpcomponents/httpcore/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/apache/httpcomponents/httpmime/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/grizzly/grizzly-framework/2.3.28/grizzly-framework-2.3.28.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/grizzly/grizzly-framework/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/grizzly/grizzly-http-server/2.3.28/grizzly-http-server-2.3.28.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/grizzly/grizzly-http-server/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/grizzly/grizzly-http/2.3.28/grizzly-http-2.3.28.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/grizzly/grizzly-http/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/external/aopalliance-repackaged/2.5.0-b32/aopalliance-repackaged-2.5.0-b32.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/external/aopalliance-repackaged/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/external/javax.inject/2.5.0-b32/javax.inject-2.5.0-b32.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/external/javax.inject/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/hk2-api/2.5.0-b32/hk2-api-2.5.0-b32.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/hk2-api/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/hk2-locator/2.5.0-b32/hk2-locator-2.5.0-b32.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/hk2-locator/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/hk2-utils/2.5.0-b32/hk2-utils-2.5.0-b32.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/hk2-utils/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/hk2/osgi-resource-locator/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.25.1/jersey-guava-2.25.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/bundles/repackaged/jersey-guava/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/containers/jersey-container-grizzly2-http/2.25.1/jersey-container-grizzly2-http-2.25.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/containers/jersey-container-grizzly2-http/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/core/jersey-client/2.25.1/jersey-client-2.25.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/core/jersey-client/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/core/jersey-common/2.25.1/jersey-common-2.25.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/core/jersey-common/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/core/jersey-server/2.25.1/jersey-server-2.25.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/core/jersey-server/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/ext/jersey-entity-filtering/2.25.1/jersey-entity-filtering-2.25.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/ext/jersey-entity-filtering/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/media/jersey-media-jaxb/2.25.1/jersey-media-jaxb-2.25.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/media/jersey-media-jaxb/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/media/jersey-media-json-jackson/2.25.1/jersey-media-json-jackson-2.25.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/glassfish/jersey/media/jersey-media-json-jackson/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/javassist/javassist/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/json/json/20160810/json-20160810.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/json/json/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/telegram/chatbot/1.0-SNAPSHOT/chatbot-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/telegram/chatbot/1.0-SNAPSHOT/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/telegram/chatbot/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/telegram/telegrambots-meta/3.5/telegrambots-meta-3.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/telegram/telegrambots-meta/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/telegram/telegrambots/3.5/telegrambots-3.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/repo/org/telegram/telegrambots/maven-metadata-appassembler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/telegram/chatbot/game/GameUT.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/org/telegram/chatbot/utils/StringUtilsUT.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/telegram/chatbot/command/CommandSet.java" afterPath="$PROJECT_DIR$/src/main/java/org/telegram/chatbot/command/CommandSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/telegram/chatbot/game/Game.java" afterPath="$PROJECT_DIR$/src/main/java/org/telegram/chatbot/game/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/telegram/chatbot/utils/StringUtils.java" afterPath="$PROJECT_DIR$/src/main/java/org/telegram/chatbot/utils/StringUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/telegram/chatbot/utils/StringUtilsUT.java" afterPath="$PROJECT_DIR$/src/test/java/org/telegram/chatbot/utils/StringUtilsUT.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -679,7 +565,7 @@
       <workItem from="1511898836355" duration="15356000" />
       <workItem from="1511952971326" duration="3637000" />
       <workItem from="1511980173665" duration="3863000" />
-      <workItem from="1511992128314" duration="668000" />
+      <workItem from="1511992128314" duration="924000" />
     </task>
     <task id="LOCAL-00001" summary="game process">
       <created>1511907182999</created>
@@ -738,7 +624,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38967000" />
+    <option name="totallyTimeSpent" value="39223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
