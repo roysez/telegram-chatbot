@@ -27,7 +27,7 @@ public class Dictionary {
         dictionary.add("мені стидно");
     }
 
-    public static String RandomPhrase(){
+    public static String randomPhrase(){
         Random random = new Random();
         return dictionary.get(random.nextInt(dictionary.size()-1));
     }
