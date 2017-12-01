@@ -1,7 +1,7 @@
 package org.telegram.chatbot;
 
 import org.apache.log4j.Logger;
-import org.telegram.chatbot.command.CommandSet;
+import org.telegram.chatbot.command.*;
 import org.telegram.chatbot.game.Game;
 import org.telegram.chatbot.utils.StringUtils;
 import org.telegram.telegrambots.api.objects.Update;
@@ -14,6 +14,14 @@ public class Bot extends TelegramLongPollingBot {
 
     private CommandSet commandSet = new CommandSet();
     private Game game = Game.getInstance();
+
+    public Bot() {
+        commandSet.addCommand(new RegisterCommand("/reg"));
+        commandSet.addCommand(new GuessNumberCommand("/guess"));
+        commandSet.addCommand(new SwitchModeCommand("/switch"));
+        commandSet.addCommand(new FinishGameCommand("/finish"));
+        commandSet.addCommand(new RigatCommand("/rugatu"));
+    }
 
     public void onUpdateReceived(Update update) {
 
