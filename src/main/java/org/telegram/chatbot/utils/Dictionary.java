@@ -25,10 +25,19 @@ public class Dictionary {
                 "нехуй було на пз поступати шоб вчитись");
         dictionary.add("Сосиски в миски");
         dictionary.add("Завтра нічого не треба мутити до старого?");
-      //  dictionary.add("найгірше - це бачити в мітапі на який хочеш сходити парочку 2 єбанутих дівчин");
+        //  dictionary.add("найгірше - це бачити в мітапі на який хочеш сходити парочку 2 єбанутих дівчин");
         dictionary.add("досить цікава хуйня. навіть я б сказав дуже");
-        dictionary.add("досить цікава хуйня. навіть я б сказав дуже");
+        dictionary.add("Ви поступили в елітний вуз, звикайте до хуйні");
+        dictionary.add("Та й таке");
+        dictionary.add("гляньте як надворі зірки світяться");
+        dictionary.add("Вільна каса!");
+        dictionary.add("треба виєбати цих стипендіатів");
+        dictionary.add("Ще 50 хвилин можна ригати");
+        dictionary.add("Завтра на першу пару))");
         dictionary.add("мені стидно");
+        dictionary.add("Дмитро, винеси стіл");
+
+        dictionary.add(" ");
     }
 
     public static String randomPhrase(){
