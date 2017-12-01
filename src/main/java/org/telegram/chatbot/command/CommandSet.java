@@ -12,6 +12,8 @@ public class CommandSet {
         addCommand(new RegisterCommand("/reg"));
         addCommand(new GuessNumberCommand("/guess"));
         addCommand(new SwitchModeCommand("/switch"));
+        addCommand(new FinishGameCommand("/finish"));
+        addCommand(new RigatCommand("/rugatu"));
     }
 
     public BotCommand getCommand(String key) {

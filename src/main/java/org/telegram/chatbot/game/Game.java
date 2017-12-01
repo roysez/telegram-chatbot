@@ -16,8 +16,8 @@ import java.util.stream.Stream;
 @Data
 public class Game {
 
+    public static int DIGITS_COUNT = 3;
     private static Logger logger = Logger.getLogger(Game.class);
-
     private static Game instance = new Game();
     private Player firstPlayer;
     private Player secondPlayer;
@@ -31,6 +31,14 @@ public class Game {
 
     public static Game getInstance() {
         return instance == null ? new Game() : instance;
+    }
+
+    public static int switchMode() {
+        if (DIGITS_COUNT == 3)
+            DIGITS_COUNT += 1;
+        else
+            DIGITS_COUNT -= 1;
+        return DIGITS_COUNT;
     }
 
     public void finishGame() {
@@ -73,11 +81,10 @@ public class Game {
         } else return false;
     }
 
-
     public int generateRandomNumber() {
         int value;
         do {
-            if(StringUtils.DIGITS_COUNT==3) {
+            if (DIGITS_COUNT == 3) {
                 value = new Random().nextInt(1000 - 101) + 101;
             } else {
                 value = new Random().nextInt(10000 - 1001) + 1001;

@@ -18,7 +18,7 @@ public class SwitchModeCommand extends BotCommand {
         Game instance = Game.getInstance();
         SendMessage message;
         if (!instance.getGameIsStarted()) {
-            int mode = StringUtils.switchMode();
+            int mode = Game.switchMode();
             message = new SendMessage()
                     .setChatId(update.getMessage().getChatId())
                     .setText("Теперь количество цифр: " + mode);
