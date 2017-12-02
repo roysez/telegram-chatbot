@@ -36,6 +36,12 @@ public class Dictionary {
         dictionary.add("Завтра на першу пару))");
         dictionary.add("мені стидно");
         dictionary.add("Дмитро, винеси стіл");
+        dictionary.add("шось взагалі не мінусуюсь");
+        dictionary.add("хлопчику. сідай вчитись");
+        dictionary.add("Шо я ригаю..");
+        dictionary.add("Піздьож від Коротєхи");
+        dictionary.add("Тобі на А");
+        dictionary.add("Ригайте в бесіду");
 
         dictionary.add(" ");
     }
