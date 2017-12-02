@@ -1,5 +1,6 @@
 package org.telegram.chatbot.command;
 
+import org.telegram.chatbot.Bot;
 import org.telegram.chatbot.game.Game;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Update;
@@ -14,9 +15,10 @@ public class FinishGameCommand extends BotCommand {
     }
 
     @Override
-    public void execute(TelegramLongPollingBot bot, Update update) throws TelegramApiException {
+    public void execute(Bot bot, Update update) throws TelegramApiException {
         if (update.getMessage().getFrom().getUserName().equals("roysez")) {
-            Game game = Game.getInstance();
+            Game game = bot.getGame(update.getMessage().getChatId());
+
             if (game.getGameIsStarted()) {
                 game.finishGame();
                 bot.execute(new SendMessage()

@@ -1,5 +1,6 @@
 package org.telegram.chatbot.command;
 
+import org.telegram.chatbot.Bot;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
@@ -16,7 +17,7 @@ public abstract class BotCommand {
         return commandName;
     }
 
-    public abstract void execute(TelegramLongPollingBot bot, Update update) throws TelegramApiException;
+    public abstract void execute(Bot bot, Update update) throws TelegramApiException;
 
     @Override
     public boolean equals(Object o) {

@@ -1,5 +1,6 @@
 package org.telegram.chatbot.command;
 
+import org.telegram.chatbot.Bot;
 import org.telegram.chatbot.game.Game;
 import org.telegram.chatbot.game.Round;
 import org.telegram.chatbot.game.Score;
@@ -17,9 +18,10 @@ public class GuessNumberCommand extends BotCommand {
     }
 
     @Override
-    public void execute(TelegramLongPollingBot bot, Update update) throws TelegramApiException {
+    public void execute(Bot bot, Update update) throws TelegramApiException {
         Integer id = update.getMessage().getFrom().getId();
-        Game game = Game.getInstance();
+        Game game = bot.getGame(update.getMessage().getChatId());
+
 
         if (game.getFirstPlayer().getId().equals(id))
             firstPlayerStep(bot, update);
@@ -34,8 +36,9 @@ public class GuessNumberCommand extends BotCommand {
         }
     }
 
-    private void secondPlayerStep(TelegramLongPollingBot bot, Update update) throws TelegramApiException {
-        Game game = Game.getInstance();
+    private void secondPlayerStep(Bot bot, Update update) throws TelegramApiException {
+        Game game = bot.getGame(update.getMessage().getChatId());
+
         Round currentRound = game.getCurrentRound();
         Optional<SendMessage> message;
         Optional<SendMessage> finalMessage = Optional.empty();
@@ -72,9 +75,10 @@ public class GuessNumberCommand extends BotCommand {
     }
 
 
-    private void firstPlayerStep(TelegramLongPollingBot bot, Update update) throws TelegramApiException {
+    private void firstPlayerStep(Bot bot, Update update) throws TelegramApiException {
 
-        Game game = Game.getInstance();
+        Game game = bot.getGame(update.getMessage().getChatId());
+
         Round currentRound = game.getCurrentRound();
         Optional<SendMessage> message;
         Optional<SendMessage> finalMessage = Optional.empty();

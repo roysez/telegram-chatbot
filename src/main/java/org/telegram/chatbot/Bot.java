@@ -8,12 +8,15 @@ import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Bot extends TelegramLongPollingBot {
 
     private static Logger logger = Logger.getLogger(Bot.class);
 
     private CommandSet commandSet = new CommandSet();
-    private Game game = Game.getInstance();
+    private Map<Long, Game> gameMap = new HashMap<>();
 
     public Bot() {
         commandSet.addCommand(new RegisterCommand("/reg"));
@@ -23,7 +26,17 @@ public class Bot extends TelegramLongPollingBot {
         commandSet.addCommand(new RigatCommand("/rugatu"));
     }
 
+    public Game getGame(Long chatId) {
+        if (gameMap.containsKey(chatId))
+            return gameMap.get(chatId);
+        else {
+            gameMap.put(chatId, new Game());
+            return gameMap.get(chatId);
+        }
+    }
+
     public void onUpdateReceived(Update update) {
+
 
         if (update.hasMessage() && update.getMessage().hasText()) {
 
@@ -45,6 +58,8 @@ public class Bot extends TelegramLongPollingBot {
     private void processMessage(Update update) {
         String text = update.getMessage().getText();
         logger.info("MESSAGE: Text: " + text);
+
+        Game game = getGame(update.getMessage().getChatId());
 
         Integer senderId = update.getMessage().getFrom().getId();
         if (StringUtils.isValidNumberForGame(text) && game.getGameIsStarted() && game.isPlayer(senderId)) {

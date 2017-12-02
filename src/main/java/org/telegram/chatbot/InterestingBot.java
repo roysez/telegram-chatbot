@@ -4,10 +4,9 @@ import org.telegram.chatbot.command.CommandSet;
 import org.telegram.chatbot.command.RigatCommand;
 import org.telegram.chatbot.utils.StringUtils;
 import org.telegram.telegrambots.api.objects.Update;
-import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 
-public class InterestingBot extends TelegramLongPollingBot {
+public class InterestingBot extends Bot {
 
     private CommandSet commandSet = new CommandSet();
 

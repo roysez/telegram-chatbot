@@ -1,5 +1,6 @@
 package org.telegram.chatbot.command;
 
+import org.telegram.chatbot.Bot;
 import org.telegram.chatbot.exception.FullRoomException;
 import org.telegram.chatbot.exception.PlayerAlreadyRegisteredException;
 import org.telegram.chatbot.game.Game;
@@ -12,17 +13,19 @@ import java.util.Optional;
 
 public class RegisterCommand extends BotCommand {
 
-    private Game game = Game.getInstance();
+
 
     public RegisterCommand(String commandName) {
         super(commandName);
     }
 
-    public void execute(TelegramLongPollingBot bot, Update update) throws TelegramApiException {
+    public void execute(Bot bot, Update update) throws TelegramApiException {
+        Game game = bot.getGame(update.getMessage().getChatId());
 
         Optional<SendMessage> message = Optional.empty();
         Optional<SendMessage> groupMessage = Optional.empty();
         try {
+
             game.regPlayer(update.getMessage().getFrom());
 
             message =  Optional.ofNullable(new SendMessage()

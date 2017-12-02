@@ -1,5 +1,6 @@
 package org.telegram.chatbot.command;
 
+import org.telegram.chatbot.Bot;
 import org.telegram.chatbot.game.Game;
 import org.telegram.chatbot.utils.StringUtils;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
@@ -14,10 +15,11 @@ public class SwitchModeCommand extends BotCommand {
     }
 
     @Override
-    public void execute(TelegramLongPollingBot bot, Update update) throws TelegramApiException {
-        Game instance = Game.getInstance();
+    public void execute(Bot bot, Update update) throws TelegramApiException {
+        Game game = bot.getGame(update.getMessage().getChatId());
+
         SendMessage message;
-        if (!instance.getGameIsStarted()) {
+        if (!game.getGameIsStarted()) {
             int mode = Game.switchMode();
             message = new SendMessage()
                     .setChatId(update.getMessage().getChatId())

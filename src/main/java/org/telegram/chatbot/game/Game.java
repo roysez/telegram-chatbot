@@ -25,13 +25,10 @@ public class Game {
     private Round currentRound;
     private List<Round> rounds = new ArrayList<>();
 
-    private Game() {
+    public Game() {
 
     }
 
-    public static Game getInstance() {
-        return instance == null ? new Game() : instance;
-    }
 
     public static int switchMode() {
         if (DIGITS_COUNT == 3)
