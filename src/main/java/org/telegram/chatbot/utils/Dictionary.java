@@ -25,7 +25,7 @@ public class Dictionary {
                 "нехуй було на пз поступати шоб вчитись");
         dictionary.add("Сосиски в миски");
         dictionary.add("Завтра нічого не треба мутити до старого?");
-        //  dictionary.add("найгірше - це бачити в мітапі на який хочеш сходити парочку 2 єбанутих дівчин");
+        dictionary.add("найгірше - це бачити в мітапі на який хочеш сходити парочку 2 єбанутих дівчин");
         dictionary.add("досить цікава хуйня. навіть я б сказав дуже");
         dictionary.add("Ви поступили в елітний вуз, звикайте до хуйні");
         dictionary.add("Та й таке");
@@ -40,8 +40,8 @@ public class Dictionary {
         dictionary.add(" ");
     }
 
-    public static String randomPhrase(){
+    public static String randomPhrase() {
         Random random = new Random();
-        return dictionary.get(random.nextInt(dictionary.size()-1));
+        return dictionary.get(random.nextInt(dictionary.size() - 1));
     }
 }
