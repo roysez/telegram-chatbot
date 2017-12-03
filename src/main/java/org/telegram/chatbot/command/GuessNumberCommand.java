@@ -28,7 +28,7 @@ public class GuessNumberCommand extends BotCommand {
             secondPlayerStep(bot, update);
 
 
-        if (game.nextRound() && game.getGameIsStarted()) {
+        if ( game.getGameIsStarted() && game.nextRound()) {
             bot.execute(new SendMessage()
                     .setChatId(update.getMessage().getChatId())
                     .setText(game.getRoundsTable()));
